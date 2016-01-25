@@ -2,11 +2,7 @@
 
 
 {% block content %}
-<form action="" method="post">
-	{% csrf_token %}
-	{{ form }}
-	<input type="submit" value="Create product">
-	
-</form>
+
+{% include "form_include.html" with form=form submit_btn="Create Product" %}
 
 {% endblock content %}
